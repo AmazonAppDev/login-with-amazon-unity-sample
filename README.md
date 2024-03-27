@@ -11,10 +11,10 @@ This project is a sample game developed in Unity to showcase how to integrate th
 ### Prerequisites
 
 - [Unity 2022.3.10f1](https://unity.com/)
-- [Login with Amazon SDK 3.1.2](https://developer.amazon.com/docs/login-with-amazon/android-docs.html)
-- [Amazon Developer Account](https://developer.amazon.com/)
+- Download [Login with Amazon SDK 3.1.2 zip file](https://developer.amazon.com/docs/login-with-amazon/android-docs.html#download-the-login-with-amazon-android-sdk)
+- [An Amazon Developer Account](https://developer.amazon.com/)
 
-### Installation
+### Build and test the demo
 
 1. Clone the repository:
    ```bash
@@ -23,15 +23,19 @@ This project is a sample game developed in Unity to showcase how to integrate th
 
 2. Open the project in Unity.
 
-3. Open the `SampleScene` scene located in `Assets/Scenes`.
+3. Open the `SampleScene` scene located in `Assets/Scenes`. 
 
-4. Register your project for Login with Amazon by following the [official documentation](https://developer.amazon.com/docs/login-with-amazon/create-android-project.html).
+4. Create a new [Security Profile](https://developer.amazon.com/docs/login-with-amazon/register-android.html#create-a-new-security-profile).
 
-5. Once your API key is created, place it in `Assets/assets/api_key.txt`.
+5. Create your app in the Amazon Developer portal, and in 'New app Submission/Upload your app', you'll get an Appstore Certificate Hashes link. On clicking that link, you'll get the MD5 and SHA-256 of the Amazon signature with which your app will be signed when submitted. Use these hash values while adding [Android Settings to your Security Profile](https://developer.amazon.com/docs/login-with-amazon/register-android.html#add-android-settings) to get the API key.
 
-6. Build the game for the Android platform.
+6. Once your API key is created, place it in `Assets/assets/api_key.txt`.
 
-7. Install the built APK on any device with the Amazon AppStore.
+7. Extract the login-with-amazon.jar fron the previously downloaded [Login with Amazon SDK 3.1.2 zip file](https://developer.amazon.com/docs/login-with-amazon/android-docs.html#download-the-login-with-amazon-android-sdk) and place it inside `LwaAuthenticationManagerBridge/bin`.
+
+8. Build the game for the Android platform.
+
+9. Install the built APK on any device with the Amazon AppStore.
 
 ## 🎮 How to Play
 
@@ -50,12 +54,6 @@ This project is a sample game developed in Unity to showcase how to integrate th
 ## 🔧 How to Integrate Login with Amazon
 
 We integrated the Login with Amazon SDK in our Unity project by creating a wrapper following the [Unity plugin guidelines](https://docs.unity3d.com/Manual/PluginsForAndroid.html) and recommended code for Login with Amazon Java integration.
-
-### Prerequisites
-
-1. Create your account on the [Amazon Developer portal](https://developer.amazon.com/).
-2. Create a new [Security Profile](https://developer.amazon.com/docs/login-with-amazon/register-android.html#create-a-new-security-profile).
-3. Create your app in the Amazon Developer portal, and in 'New app Submission/Upload your app', you'll get an Appstore Certificate Hashes link. On clicking that link, you'll get the MD5 and SHA-256 of the Amazon signature with which your app will be signed when submitted. Use these hash values while adding [Android Settings to your Security Profile](https://developer.amazon.com/docs/login-with-amazon/register-android.html#add-android-settings) to get the API key.
 
 ### Code Changes
 
