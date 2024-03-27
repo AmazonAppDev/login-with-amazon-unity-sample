@@ -6,6 +6,9 @@
 
 This project is a sample game developed in Unity to showcase how to integrate the Login with Amazon SDK in an Android app. The game is designed to work on Fire OS, Android, and Windows System for Android devices. 🎉
 
+![Demo Animation](./demo.gif)
+
+
 ## 🚀 Getting Started
 
 ### Prerequisites
