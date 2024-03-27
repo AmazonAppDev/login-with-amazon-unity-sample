@@ -59,9 +59,9 @@ We integrated the Login with Amazon SDK in our Unity project by creating a wrapp
 
 ### Code Changes
 
-1. Create a `LoginAuthenticationManagerBridge` folder inside `Plugins/Android`, where you'll be placing the JAR and other scripts.
+1. Create a `LwaAuthenticationManagerBridge` folder inside `Plugins/Android`, where you'll be placing the JAR and other scripts.
 
-2. Once the folder is created, download the [login-with-amazon.jar](https://developer.amazon.com/docs/login-with-amazon/android-docs.html#download-the-login-with-amazon-android-sdk) and place it inside `LoginAuthenticationManagerBridge/bin`.
+2. Once the folder is created, download the [login-with-amazon.jar](https://developer.amazon.com/docs/login-with-amazon/android-docs.html#download-the-login-with-amazon-android-sdk) and place it inside `LwaAuthenticationManagerBridge/bin`.
 
 3. Go to `Edit > Project Settings > Player > Android > Publishing Settings`, and check 'Custom Main Manifest', 'Custom Main Gradle Template', and 'Custom Gradle Setting Template'.
 
