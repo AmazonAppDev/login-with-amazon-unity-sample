@@ -147,3 +147,8 @@ Get the most up to date Amazon Appstore developer news, product releases, tutori
 * 📣 Follow [@AmazonAppDev](https://twitter.com/AmazonAppDev) and [our team](https://twitter.com/i/lists/1580293569897984000) on [Twitter](https://twitter.com/AmazonAppDev)
 * 📺 Subscribe to our [Youtube channel](https://www.youtube.com/amazonappstoredevelopers)
 * 📧 Sign up for the [Developer Newsletter](https://m.amazonappservices.com/devto-newsletter-subscribe)
+
+## Authors
+
+- [Garima Rai](https://github.com/Garirai)
+- [Giovanni Laquidara](https://github.com/giolaq)
