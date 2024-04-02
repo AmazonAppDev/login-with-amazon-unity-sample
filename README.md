@@ -2,7 +2,7 @@
 
 [![Unity Version](https://img.shields.io/badge/Unity-2022.3.10f1-blue)](https://unity.com/)
 [![Login with Amazon SDK Version](https://img.shields.io/badge/Login%20with%20Amazon%20SDK-3.1.2-orange)](https://developer.amazon.com/docs/login-with-amazon/android-docs.html)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT0-green)](LICENSE)
 
 This project is a sample game developed in Unity to showcase how to integrate the Login with Amazon SDK in an Android app. The game is designed to work on Fire OS, Android, and Windows System for Android devices. 🎉
 
@@ -130,7 +130,7 @@ For major changes, please open an issue first to discuss the proposed changes.
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT-0 License](LICENSE).
 
 ## Get support
 
