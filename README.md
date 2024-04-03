@@ -44,13 +44,13 @@ This project is a sample game developed in Unity to showcase how to integrate th
 
 1. Open the application, and you'll find a 'Login with Amazon' button activated, while the 'Sign Out' button remains inactive.
 
-2. Upon selecting the 'Login with Amazon' button, you'll be redirected to a browser where you'll be prompted to enter your credentials.
+2. Upon selecting the 'Login with Amazon' button, you'll be redirected to a browser where you'll be prompted to enter your Amazon credentials.
 
-3. After successfully logging in, you'll be asked to grant permission for the application to access your account information.
+3. After successfully logging in, you'll be asked to grant permission for the application to access your customer profile information.
 
 4. Upon granting permission, you'll be redirected back to the application, where your Account, Name, Email, and Zip Code details will be displayed.
 
-5. Subsequently, the 'Sign Out' button will become active, allowing you to log out and remove your details by clicking it.
+5. Subsequently, the 'Sign Out' button will become active, allowing you to log out and remove your information by clicking it.
 
 6. Upon completion, the 'Login with Amazon' button will be reactivated, while the 'Sign Out' button returns to an inactive state.
 
@@ -110,7 +110,7 @@ We integrated the Login with Amazon SDK in our Unity project by creating a wrapp
 
 ### Test Your App with Live App Testing (LAT)
 
-1. Add Android Settings to your security profile in the Developer portal by using the MD5 and SHA-256 values present in Appstore Certificate Hashes by following the Pre-requisite Step 3. An API key will be generated, which needs to be placed in the `Assets/assets/api_key.txt` file.
+1. Add Android Settings to your security profile in the Amazon developer portal by using the MD5 and SHA-256 values present in Appstore Certificate Hashes by following the Pre-requisite Step 3. An API key will be generated, which needs to be placed in the `Assets/assets/api_key.txt` file.
 
 2. Build your APK and submit it for [Live App Testing (LAT)](https://developer.amazon.com/docs/app-testing/live-app-testing-getting-started.html).
 
