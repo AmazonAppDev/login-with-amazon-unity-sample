@@ -68,9 +68,13 @@ We integrated the Login with Amazon SDK in our Unity project by creating a wrapp
 
 4. In `gradleTemplate.properties`, add `android.useAndroidX=true`.
 
-5. In the `Assets` folder, create an `assets` folder and insert your API key as the only data in the `api_key.txt` file generated in Step 2.
+5. Create a new [Security Profile](https://developer.amazon.com/docs/login-with-amazon/register-android.html#create-a-new-security-profile).
 
-6. In `mainTemplate.gradle`, add the following code snippet at the very end of the file:
+6. Create your app in the Amazon Developer portal, and in 'New app Submission/Upload your app', you'll get an Appstore Certificate Hashes link. On clicking that link, you'll get the MD5 and SHA-256 of the Amazon signature with which your app will be signed when submitted. Use these hash values while adding [Android Settings to your Security Profile](https://developer.amazon.com/docs/login-with-amazon/register-android.html#add-android-settings) to get the API key.
+
+7. In the `Assets` folder, create an `assets` folder and insert your API key as the only data in the `api_key.txt` 
+
+8. In `mainTemplate.gradle`, add the following code snippet at the very end of the file:
    ```groovy
    dependencies {
        implementation 'androidx.appcompat:appcompat:1.0.0'
@@ -84,12 +88,12 @@ We integrated the Login with Amazon SDK in our Unity project by creating a wrapp
    preBuild.dependsOn(copyAmazon)
    ```
 
-7. In the folder created in Step 1, add three files that create a bridge between Login with Amazon Java APIs and Unity C# script. These code snippets can be refactored as per your requirements:
+9. In the folder created in Step 1, add three files that create a bridge between Login with Amazon Java APIs and Unity C# script. These code snippets can be refactored as per your requirements:
    - `UnityPlayerProxyActivity.java`: Create a custom Unity activity following the [Unity documentation](https://docs.unity3d.com/Manual/android-custom-activity.html) and integrate Login with Amazon as documented in the [official guide](https://developer.amazon.com/docs/login-with-amazon/use-sdk-android.html).
    - `LwaAuthManager.cs`: C# file to call the Java API for execution in Unity.
    - `UnityAuthListenerCallbackInterface.java`: Interface to handle authentication callbacks.
 
-8. In `AndroidManifest.xml`, make the following changes:
+10. In `AndroidManifest.xml`, make the following changes:
    - Replace the application's activity `android:name` with `<packageName>.UnityPlayerProxyActivity`.
    - Add the [WorkflowActivity](https://developer.amazon.com/docs/login-with-amazon/create-android-project.html#add-a-workflowactivity-to-your-project). Don't forget to replace `${applicationId}` with your package name for this app.
    - Add network permissions:
